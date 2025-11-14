@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>UI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div id="radio-btns" class="card">
+    <h3>1. Radiobutton</h3>
+    <div>
+      <input type="radio" name="nums" value="1" checked>
+      <span>1</span>
+    </div>
+    <div>
+      <input type="radio" name="nums" value="2">
+      <span>2</span>
+    </div>
+    <div>
+      <input type="radio" name="nums" value="3">
+      <span>3</span>
+    </div>
+    <p>Used when users need to select exactly one option from a group of mutually exclusive choices.</p>
+  </div>
+
+  <div class="card">
+    <h3>2. Checkbox</h3>
+    <div>
+      <input type="checkbox" value="1" checked>
+      <span>1</span>
+    </div>
+    <div>
+      <input type="checkbox" value="2">
+      <span>2</span>
+    </div>
+    <div>
+      <input type="checkbox" value="3">
+      <span>3</span>
+    </div>
+    <p>Used when users can select multiple options from a list.</p>
+  </div>
+
+  <div class="card" id="textinput-card">
+    <h3>3. Text input</h3>
+    <input type="email" placeholder="email"><br>
+    <input type="password" placeholder="password">
+    <p>Used for collecting string data from users.</p>
+  </div>
+
+  <div class="card" id="tabs-card">
+    <h3>4. Tabs</h3>
+    <div class="tab-btns">
+      <button class="tab-btn active" onclick="activate(event, 'tab1')">1</button>
+      <button class="tab-btn" onclick="activate(event, 'tab2')">2</button>
+      <button class="tab-btn" onclick="activate(event, 'tab3')">3</button>
+    </div>
+    <div class="tabs">
+      <div id="tab1" class="tab active">
+        1
+      </div>
+      <div id="tab2" class="tab">
+        2
+      </div>
+      <div id="tab3" class="tab">
+        3
+      </div>
+    </div>
+    <p>Used to organize related content into separate sections that users can switch between without leaving the page.</p>
+  </div>
+
+  <div class="card">
+    <h3>5. Button</h3>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <p>Used to trigger actions.</p>
+  </div>
+
+  <div class="card">
+    <h3>6. Text label</h3>
+    <label for="input">Label</label><br>
+    <input type="text" id="input" placeholder="text">
+    <p>Used to describe input.</p>
+  </div>
+
+  <div class="card">
+    <h3>7. Link</h3>
+    <a href="#radio-btns">radio-btns</a><br>
+    <a href="https://kpi.ua">kpi.ua</a>
+    <p>Used to navigate between pages, trigger something, etc.</p>
+  </div>
+
+  <div class="card" id="tooltip-card">
+    <h3>8. Tooltips</h3>
+    <p>Hover over the <span class="tooltip">tooltip <span class="tooltip-text">tooltip</span></span></p>
+    <p>Used to show additional information</p>
+  </div>
+
+  <div class="card">
+    <h3>9. Dropdown List</h3>
+    <select>
+      <option value="">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <p>Used to select one option from a list</p>
+  </div>
+
+  <div class="card" id="datagrid-card">
+    <h3>10. Data Grid</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Name</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Kaleigh</td>
+          <td>Aruba</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Nathaniel</td>
+          <td>Equatorial Guinea</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Maybelle</td>
+          <td>El Salvador</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Used to display data in table view.</p>
+  </div>
+
+</body>
+
+</html>

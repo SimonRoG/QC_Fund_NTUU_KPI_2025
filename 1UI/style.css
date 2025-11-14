@@ -1,0 +1,122 @@
+* {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0 500px;
+    background-color: whitesmoke;
+}
+
+h3 {
+    margin: 0 0 5px 5px;
+}
+
+p {
+    margin: 15px 0 0 0;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#textinput-card {
+    input {
+        margin: 5px;
+    }
+}
+
+#tabs-card {
+    .tab-btns {
+        border-bottom: 1px solid black;
+    }
+
+    .tab-btn {
+        background: #eee;
+        border: 1px solid #eee;
+        border-radius: 10px 10px 0 0;
+        min-width: 50px;
+        cursor: pointer;
+    }
+
+    .tab-btn.active {
+        background: #ccc;
+        border: 1px solid #ccc;
+        font-weight: bold;
+    }
+
+    .tabs {
+        padding: 10px;
+    }
+
+    .tab {
+        display: none;
+    }
+
+    .tab.active {
+        display: block;
+    }
+}
+
+#tooltip-card {
+    .tooltip {
+        position: relative;
+        font-weight: 500;
+        color: navy;
+        cursor: help;
+    }
+
+    .tooltip-text {
+        opacity: 0;
+        transition: opacity 0.3s;
+        background-color: navy;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        position: absolute;
+        bottom: 125%;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 14px;
+        z-index: 1;
+    }
+
+    .tooltip-text::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border: 5px solid;
+        border-color: navy transparent transparent transparent;
+    }
+
+    .tooltip:hover .tooltip-text {
+        opacity: 1;
+    }
+}
+
+#datagrid-card {
+    table {
+        border: 1px solid black;
+
+        th,
+        td {
+            border: 1px solid black;
+            text-align: start;
+            padding: 0 5px;
+            min-width: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    body {
+        padding: 0 calc((100vw - 500px) / 2);
+    }
+}
